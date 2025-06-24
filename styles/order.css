@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #212121;
+}
+
+.order{
+    height:100% ;
+    width:100vh ;
+    padding: 70px 0;
+    
+}
+
+.order h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ff4700;
+    font-size: 55px;
+
+}
+
+.order h1:hover{
+    color: #eeeeee;
+}
+
+
+
+.order .main-order{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 20px;
+    
+}
+.order .main-order .main-img img{
+    width: 600px;
+}
+
+
+.order .main-order form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0 10px;
+
+}
+
+.order .main-order form .input p{
+    line-height: 30px;
+    font-weight: bold;
+    font-size: 18px;
+    color:white
+}
+
+.order .main-order form .input{
+    margin: 8px;
+}
+
+.order .main-order form .input input{
+    width: 350px;
+    height: 40px;
+    padding: 0 10px;
+    border: 2px  solid #cccccc;
+    background-color: #eeeeee;
+    outline: none;
+    border-radius: 3px;
+   
+    
+}
+
+.order .main-order form .input input:focus{
+    border: 2px solid #ff4700;
+}
+
+.order .main-order form .order-btn{
+    padding: 10px 0;
+    background-color: #95ca2a;
+    color: rgb(255, 255, 255);
+    width: 45%;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+
+}
+
+.order .main-order form .order-btn:hover{
+    background-color: #ff4700;
+}
+
+
+@media (min-width: 768px) {
+    .order h1 {
+        font-size: 65px; /* Slightly larger heading */
+    }
+
+    .order .main-order {
+        flex-direction: column; /* Keep column for now, image on top of form */
+        gap: 40px;
+    }
+
+    .order .main-order .main-img img {
+        max-width: 500px; /* Adjust max width for tablet images */
+    }
+
+    .order .main-order form {
+        grid-template-columns: 1fr 1fr; /* Reintroduce two columns for tablets */
+        grid-gap: 0 20px; /* Adjust gap */
+        max-width: 750px; /* Allow form to be wider */
+    }
+
+    .order .main-order form .input input {
+        width: 100%; /* Keep 100% within its grid cell */
+    }
+
+    .order .main-order form .order-btn {
+        width: 45%; /* Revert button width */
+        grid-column: span 2; /* Make button span both columns */
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Large Screens (Desktops - 1024px and up) */
+@media (min-width: 1024px) {
+    .order {
+        padding: 70px 0; /* Revert to original padding */
+    }
+
+    .order h1 {
+        font-size: 55px; /* Revert to original heading size */
+    }
+
+    .order .main-order {
+        flex-direction: row; /* Original side-by-side layout */
+        gap: 20px; /* Revert to original gap */
+    }
+
+    .order .main-order .main-img img {
+        width: 600px; /* Revert to original image width */
+        max-width: none; /* Remove max-width constraint */
+    }
+
+    .order .main-order form {
+        width: auto; /* Let content dictate width */
+        max-width: none; /* Remove max-width constraint */
+        grid-template-columns: 1fr 1fr; /* Keep two columns */
+        grid-gap: 0 10px; /* Revert to original gap */
+    }
+
+    .order .main-order form .input input {
+        width: 350px; /* Revert to original input width */
+    }
+
+    .order .main-order form .order-btn {
+        width: 45%; /* Original button width */
+        grid-column: auto; /* Reset grid column span if needed */
+        margin-left: 0; /* Revert button positioning */
+        margin-right: 0;
+        display: inline-block; /* Revert display if needed */
+    }
+}
+
+/* Extra Large Screens (Optional - 1440px and up) */
+@media (min-width: 1440px) {
+    /* You can add further optimizations for very large screens here if needed,
+       e.g., increasing max-width of .order or .main-order for more content spacing. */
+}
+
+@media (min-width: 746px){
+    .order h1 {
+        font-size: 65px; /* Slightly larger heading */
+    }
+
+    .order .main-order {
+        flex-direction: column; /* Keep column for now, image on top of form */
+        gap: 40px;
+    }
+
+    .order .main-order .main-img img {
+        max-width: 500px; /* Adjust max width for tablet images */
+    }
+
+    .order .main-order form {
+        grid-template-columns: 1fr 1fr; /* Reintroduce two columns for tablets */
+        grid-gap: 0 20px; /* Adjust gap */
+        max-width: 750px; /* Allow form to be wider */
+    }
+
+    .order .main-order form .input input {
+        width: 100%; /* Keep 100% within its grid cell */
+    }
+
+    .order .main-order form .order-btn {
+        width: 45%; /* Revert button width */
+        grid-column: span 2; /* Make button span both columns */
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Large Screens (Desktops - 1024px and up) */
+@media (min-width: 1024px) {
+    .order {
+        padding: 70px 0; /* Revert to original padding */
+    }
+
+    .order h1 {
+        font-size: 55px; /* Revert to original heading size */
+    }
+
+    .order .main-order {
+        flex-direction: row; /* Original side-by-side layout */
+        gap: 20px; /* Revert to original gap */
+    }
+
+    .order .main-order .main-img img {
+        width: 600px; /* Revert to original image width */
+        max-width: none; /* Remove max-width constraint */
+    }
+
+    .order .main-order form {
+        width: auto; /* Let content dictate width */
+        max-width: none; /* Remove max-width constraint */
+        grid-template-columns: 1fr 1fr; /* Keep two columns */
+        grid-gap: 0 10px; /* Revert to original gap */
+    }
+
+    .order .main-order form .input input {
+        width: 350px; /* Revert to original input width */
+    }
+
+    .order .main-order form .order-btn {
+        width: 45%; /* Original button width */
+        grid-column: auto; /* Reset grid column span if needed */
+        margin-left: 0; /* Revert button positioning */
+        margin-right: 0;
+        display: inline-block; /* Revert display if needed */
+    }
+}
+
