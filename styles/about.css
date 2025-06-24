@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Sevillana&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #212121;
+    color: white;
+
+
+}
+
+body h1 {
+    font-size: 3em;
+    text-align: center;
+    margin-top: 10PX;
+
+}
+
+body span {
+    color: #ff4700;
+}
+
+#box1 {
+    height: 300px;
+    width: 30%;
+    background-color: #212121;
+    margin-top: 20PX;
+    float: left;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    transition: all 3s linear;
+}
+
+#box1 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+#box2 {
+    height: 300px;
+    width: 60%;
+    color: white;
+    background-color: #212121;
+    float: left;
+    margin-top: 20px;
+    flex-wrap: wrap;
+
+}
+
+#box2 span {
+    color: #ff4700;
+    font-size: 1.40;
+
+}
+
+#box2 h1 {
+    font-size: 1.50em;
+}
+
+#box2 p {
+    text-align: left;
+    padding: 10px;
+    margin-left: 30px;
+    
+
+}
+
+#lastpage {
+    height: 300px;
+    width: 100%;
+    background-color: #212121;
+    float: left;
+
+}
+
+#lastpage span {
+    color: #ff4700;
+    flex-wrap: wrap;
+}
+#lastpage h2{
+    font-size: 2.40em;
+    text-align: center;
+}
+
+.card {
+    height: 150px;
+    width: 150px;
+    background-color: #ff4700;
+    float: left;
+    margin: 60px;
+    margin-left: 60px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    border-radius: 8px;
+    transition: all 3s linear;
+
+
+}
+
+.pic {
+    height: 65%;
+    width: 100%;
+    background-color: white;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.pic img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+
+}
+
+.card :hover {
+    transform: scale(1.1);
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+    body h1 {
+        font-size: 2em;
+        margin-top: 15px;
+    }
+
+    #box1 {
+        width: 50%;
+        height: auto;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        margin-left: 25%;
+    }
+
+    #box1 img {
+        width: 100%;
+        height: auto;
+    }
+
+    #box2 {
+        width: 100%;
+        height: 60%;
+        font-size: 14px;
+        flex-wrap: wrap;
+
+    }
+
+    #box2 h2 {
+        font-size: 1.80em;
+        text-align: start;
+        margin-left: 150px;
+        margin-bottom: 20px;
+    }
+
+    #box2 p {
+        font-size: 16px;
+        flex-wrap: wrap;
+        text-align: start;
+        padding: 20px;
+    }
+
+    #lastpage {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    #lastpage h2 {
+        font-size: 2.30em;
+    }
+
+    .card {
+        width: 120px;
+        height: 120px;
+        margin: 10px;
+        float: none;
+    }
+
+    .pic {
+        height: 70%;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+}
